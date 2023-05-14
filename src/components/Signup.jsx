@@ -34,7 +34,7 @@ const Signup = () => {
 
                       <div className='emaildiv' >
                           <FaUserCircle size={20} className='userlogo'/>
-                      <input type="text" placeholder='Name' required/>
+                      <input type="text" placeholder='Enter Your Name' required/>
                       </div>
 
                       <div className='emaildiv' >
