@@ -1,8 +1,14 @@
 import React from 'react'
+import Towercomp from './Towercomp'
 
 const Foods = () => {
   return (
-    <div>Foods</div>
+    <div>
+                <Towercomp title="Food " />
+        
+            
+
+    </div>
   )
 }
 

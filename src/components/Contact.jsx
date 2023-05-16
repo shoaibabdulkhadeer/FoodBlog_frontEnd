@@ -1,8 +1,13 @@
 import React from 'react'
+import Towercomp from './Towercomp'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>
+             <Towercomp title="Contact" />
+        
+
+    </div>
   )
 }
 

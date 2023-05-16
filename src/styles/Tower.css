@@ -1,0 +1,27 @@
+.imgdiv2{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imgdiv2 img{
+ opacity: 0.9;
+}
+
+.compHead{
+    position: absolute;
+    z-index: 10;
+    color: white !important;
+    top: 50%;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    background-color: black;
+}
