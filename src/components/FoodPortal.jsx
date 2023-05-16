@@ -6,6 +6,7 @@ import About from './About'
 import Foods from '../components/Foods'
 import Lifestyle from './Lifestyle'
 import Contact from './Contact'
+import Footer from './Footer'
 
 
 const Home = () => {
@@ -19,9 +20,8 @@ const Home = () => {
             <Route path="/foods" element={<Foods />} />
             <Route path="/lifestyle" element={<Lifestyle />} />
             <Route path="/contact" element={<Contact />}/>
-
-               
          </Routes>
+         <Footer />
  
 
 
