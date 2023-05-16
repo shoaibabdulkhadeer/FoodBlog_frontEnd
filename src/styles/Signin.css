@@ -7,8 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+
 .Signin{
-    min-height: 100vh;
+  
     display: flex;
     margin-top: 25px;
     flex-direction: column;
