@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className='Navbar'>
           
           <div className='Navtitle'>
-            Stories
+            FoodBlog
           </div>
 
           <div className='Linkdiv'>

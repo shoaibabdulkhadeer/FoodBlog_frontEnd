@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import '../styles/AddPost.css'
 import Towercomp from './Towercomp'
-
+import axios from 'axios'
+import {useNavigate} from 'react-router-dom' 
 
 const AddPost = () => {
 
@@ -11,12 +12,15 @@ const AddPost = () => {
   const [summary,setSummary] = useState("")
   const [location,setLocation] = useState("")
 
+  const navigate = useNavigate()
 
   const Addpost = (e) => {
        e.preventDefault()
        let data = {author , title , setTitle, image ,summary, location}
-       console.log(data)
-       alert("added")
+       axios.post("http://localhost:4000/addpost",data).then((response) => {
+        alert(response.data.message)
+       })
+       navigate('/foodblog/foods')
   } 
 
   return (
@@ -25,7 +29,6 @@ const AddPost = () => {
     <div className='AddDiv'>
  
 
-             
            <img src="/images/pancakes.jpg" alt=""  className='pancakeimg'
            height={750}
            />
