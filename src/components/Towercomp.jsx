@@ -7,6 +7,7 @@ const Towercomp = ({title}) => {
 
 
             <div className='imgdiv2'>
+            <div className='overlay'></div>
                 <img src="https://images.unsplash.com/photo-1524010464459-ebc38e4a3331?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1562&q=80"
                     alt=""
                     width={1600}
@@ -17,7 +18,7 @@ const Towercomp = ({title}) => {
 
                 <h1 className='compHead'>{title}</h1>
                   
-                  <div className='overlay'></div>
+                 
             </div>
 
 

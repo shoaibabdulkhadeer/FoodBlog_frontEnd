@@ -7,6 +7,7 @@ import Foods from '../components/Foods'
 import Lifestyle from './Lifestyle'
 import Contact from './Contact'
 import Footer from './Footer'
+import AddPost from './AddPost'
 
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<About />} />
             <Route path="/foods" element={<Foods />} />
+            <Route path="/addpost" element={<AddPost />} />
             <Route path="/lifestyle" element={<Lifestyle />} />
             <Route path="/contact" element={<Contact />}/>
          </Routes>

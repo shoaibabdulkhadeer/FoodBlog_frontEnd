@@ -5,6 +5,7 @@
   
 }
 
+
 .maincomp{
     display: flex;
     justify-content: center;
@@ -92,3 +93,4 @@
 .ptag{
     margin-top: 10px;
 }
+
