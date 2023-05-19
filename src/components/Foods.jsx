@@ -2,14 +2,13 @@ import React, { useEffect, useState } from 'react'
 import Towercomp from './Towercomp'
 import axios from 'axios'
 import '../styles/allPosts.css'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 const Foods = () => {
    
   const [allpost,setAllPosts] = useState([])
   const [searchinput,setSearchInput] = useState([])
-
 
   useEffect(() => {
     try{
@@ -23,12 +22,6 @@ const Foods = () => {
   
   },[])
 
-const navigate = useNavigate()
-
-  const Read = (id) => {
-    navigate(`/foodblog/post/${id}`)
-  }
-
   const searchuser = (e) => {
       setSearchInput(allpost.filter(x=> x.title.toLowerCase().includes(e.target.value.toLowerCase())))
   }
@@ -38,7 +31,6 @@ const navigate = useNavigate()
                 <Towercomp title="All Posts " />
 
 
- 
 
        <input onChange={searchuser} className='searchinput' placeholder='Search your best food'/>
            
