@@ -28,7 +28,7 @@ const AddPost = () => {
      <Towercomp title="Add Post"/>
     <div className='AddDiv'>
  
-
+ 
            <img src="/images/pancakes.jpg" alt=""  className='pancakeimg'
            height={750}
            />

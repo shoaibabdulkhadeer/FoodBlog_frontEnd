@@ -12,7 +12,7 @@ const About = () => {
         <img src="https://img1.wallspic.com/previews/6/7/3/8/6/168376/168376-food-ingredient-recipe-cooking-tableware-x750.jpg"
           alt=""
           width={500}
-         height={700}
+         height={780}
         />
 
         <div className='about2divside'>
@@ -32,7 +32,6 @@ const About = () => {
               <h1>200</h1>
               <p>Foods</p>
             </div>
-
           </div>
 
 
@@ -48,9 +47,6 @@ const About = () => {
             </div>
 
           </div>
-
-
-
 
         </div>
 

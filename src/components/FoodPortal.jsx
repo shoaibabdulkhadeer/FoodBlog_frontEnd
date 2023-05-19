@@ -8,6 +8,7 @@ import Lifestyle from './Lifestyle'
 import Contact from './Contact'
 import Footer from './Footer'
 import AddPost from './AddPost'
+import FoodPage from './FoodPage'
 
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
             <Route path="/addpost" element={<AddPost />} />
             <Route path="/lifestyle" element={<Lifestyle />} />
             <Route path="/contact" element={<Contact />}/>
+            <Route path='/foodPost/:id' element={<FoodPage />}/>
          </Routes>
          <Footer />
  

@@ -14,7 +14,7 @@ const Navbar = () => {
             <ul>
                <Link to='/foodblog'>Home </Link> 
                  <Link to='/foodblog/about'>About</Link>
-                <Link to='/foodblog/foods'>Foods</Link>
+                <Link to='/foodblog/foods'>All posts</Link>
                 <Link to='/foodblog/lifestyle'>Lifestyle</Link>
                 <Link to='/foodblog/addpost'>Add Post</Link>
                 <Link to='/foodblog/contact'>Contact </Link>
