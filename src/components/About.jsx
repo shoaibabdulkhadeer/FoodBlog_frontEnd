@@ -1,8 +1,27 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/About.css'
 import Towercomp from './Towercomp'
+import axios from 'axios'
 
 const About = () => {
+
+  const [users,setUsers] = useState([])
+  const [foods,setFoods] = useState([])
+
+   useEffect(() => {
+
+    axios.get('http://localhost:4000/userlist').then((response) => {
+      setUsers(response.data)
+    })
+
+
+    axios.get('http://localhost:4000/posts').then((response) => {
+       setFoods(response.data.posts)
+    })
+
+   },[])
+
+
   return (
     <div>
       <Towercomp title="About Us" />
@@ -29,7 +48,7 @@ const About = () => {
             </div>
 
             <div className='box'>
-              <h1>200</h1>
+              <h1>{foods.length}</h1>
               <p>Foods</p>
             </div>
           </div>
@@ -42,7 +61,7 @@ const About = () => {
             </div>
 
             <div className='box'>
-              <h1>40</h1>
+              <h1>{users.length}</h1>
               <p>Happy Customers</p>
             </div>
 
